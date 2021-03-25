@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: none !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  background: #FC466B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+/* *********** */
+.container-div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+}
+.row1 {
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.column {
+    margin: auto;
+    color: #150159;
+    height: 450px;
+    width: 100%;
+}
+/* card styling starts here */
+.stepcard {
+    height: 400px;
+    width: 300px;
+    background-color: #FEFEDF;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #744FB1 ;
+    margin: 0px auto;
+    transition: 0.5s all ease-in-out;
+}
+.stepcard:hover {
+    transform: scale(1.1);
+}
+.real-img{
+    border-radius: 50%;
+    display: block;
+    margin: 0px auto;
+    border-radius: 50%;
+    margin-left: 0px;
+    padding: 0px;
+}
+.real-img:hover{
+    transform: scale(1.1);
+}
+.stepcount {
+    color: #150159;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 150%;
+    padding-bottom: 5px;
+    font-family: 'Lobster', cursive;
+    width: fit-content;
+}
+.mask-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 2px -0px 20px #744FB1 inset;
+    background: #212121;
+    margin: 0px auto;
+    position: relative;
+    top: 30px;
+}
+.real-img {
+    margin: 0px;
+    padding: 0;
+    box-shadow: none;
+    height: 150px;
+    width: 150px;
+}
+.real-img-div {
+    width: fit-content;
+}
+.part1-img, .part2-img {
+    position: relative;
+    top: -120px;
+    left: 63px;
+}
+.part2-img {
+    left: 75px;
+}
+.part1-img {
+  height: 175px;
+  width: 175px;
+}
+.card-img {
+    height: 50%;
+}
+.card-txt {
+    width: 100%;
+}
+.card-txt-head {
+    color: #744FB1;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #744FB1;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.card-txt-content {
+    max-width: 150px;
+    text-align: center;
+    margin: 0px auto;
+    line-height: 1.1;
+    font-size: large;
+    font-family: 'Lobster', cursive;
+    margin-top: 20px;
+}
+
+.content2 {
+    max-width: 180px;
+}
+a {
+    color: unset;
+    text-decoration: none;
+}
+a:hover {
+    color: unset;
+    text-decoration: none;
+}
+a:focus {
+    color: unset;
+    text-decoration: none;
+}
+a:visited {
+    color: unset;
+    text-decoration: none;
+}
+/* ********* */
+/* MEDIA QUERIES */
+
+@media (max-width:945px) {
+    .row1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .stepcard {
+        background-color: #212121;
+    }
+    .card-txt-head {
+        color: #FEFEDF;
+    }
+    body {
+        background: linear-gradient(#FEFEDF, #744FB1 );
+        height: 200vh;
+    }
+}
